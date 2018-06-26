@@ -1,0 +1,285 @@
+
+
+/*--------------------------------------------
+	General
+-----------------------------------------------*/
+
+body {
+	font-size: 14px;
+	line-height: 28px;
+	overflow-x: hidden;
+	background-color: #FF9900;
+	font-family: BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+	transition: 400ms ease;
+}
+
+/*--------------------------------------------
+	Main Section
+-----------------------------------------------*/
+
+section.main>.inner {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+section.main .payment-container {
+	width: 650px;
+	padding: 20px;
+	background-color: #fff;
+	margin: auto;
+	box-shadow: 0px 0px 5px 1px #888888;
+	border-radius: 3px;
+}
+
+.payment-container {
+	text-align: center;
+}
+
+.payment-container>.payment-header>img {
+	max-width: 85px;
+}
+
+.payment-container>.payment-header>h1 {
+	display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.payment-container>.payment-header>p {
+	font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.payment-container>.payment-header>span {
+	display: inline-block;
+	color: #28a745!important;
+	font-size: 16px;
+}
+
+.payment-content {
+	margin-top: 15px;
+}
+
+#address-holder {
+	padding: 7px 40px;
+    border-radius: 2px;
+    border: 1px solid #CED4DA;
+    background: #E9ECEF;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn.btn-success {
+	font-size: 16px;
+	background-color: #28a745;
+	border-color: #28a745;
+	margin-top: 10px;
+	transition: 400ms ease;
+	position: relative;
+}
+
+.btn.btn-success>.tooltip-in {
+	position: absolute;
+    background-color: #000;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    width: 54px;
+    top: 43px;
+    display: none;
+}
+
+.btn.btn-success>.tooltip-in:before {
+	position: absolute;
+    content: '';
+    top: -4px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid black;
+}
+
+.btn.btn-success:hover {
+	background-color: #228839;
+}
+
+.payment-content>img {
+	display: block;
+	margin: 10px auto;
+}
+
+.payment-content>p,
+.payment-content>#payment-stuck-txt {
+	font-size: 16px;
+}
+
+.payment-content>#payment-stuck-txt {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.payment-content>#payment-stuck-txt.green {
+	color: green;
+}
+
+.payment-content>.loader-icon {
+	max-width: 40px;
+}
+
+.eth-counter {
+	background-color: #F3BA2F;
+    max-width: 200px;
+    margin: auto;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.eth-counter>span {
+	font-size: 16px;
+}
+
+.transact-section {
+	width: 900px;
+	margin: auto;
+	background-color: #fff;
+	margin: 50px auto 0 auto;
+	box-shadow: 0px 0px 5px 1px #888888;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.transact-section>.transact-header>h1 {
+	font-size: 18px;
+    margin: 10px 0 30px 15px;
+    color: #696868;
+}
+
+.transact-section>.transact-header>h1>i {
+	color: #a8a8a8;
+	font-size: 16px;
+}
+
+.transact-link>img {
+	max-width: 100%;
+}
+
+#ajax-table>tbody>tr>td:last-child,
+#ajax-table>thead>tr>th:last-child {
+	font-size: 11px;
+}
+
+#ajax-table>thead>tr>th:last-child {
+	color: #a2a2a2;
+}
+
+#ajax-table>tbody>tr>td {
+	font-size: 16px;
+}
+
+#ajax-table>tbody td>.t-type {
+	display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+#ajax-table>tbody>tr.new-transaction-in>td>.t-type {
+	background-color: #4CAF50;
+	transition: 400ms ease-out;
+}
+
+#ajax-table>tbody>tr.new-transaction-out>td>.t-type {
+	background-color: #e67e22;
+	transition: 400ms ease-out;
+}
+
+#ajax-table>tbody>tr.new-transaction-in {
+	 animation: colorchange_bg_in 3s;
+     -webkit-animation: colorchange_bg_in 3s;
+}
+
+#ajax-table>tbody>tr.new-transaction-out {
+	animation: colorchange_bg_out 3s;
+    -webkit-animation: colorchange_bg_out 3s;
+}
+
+#eth-counter-val {
+	animation: fade_in 1s;
+    -webkit-animation: fade_in 3s;
+}
+
+
+ @keyframes colorchange_bg_in {
+	    from {
+	        background: #5cb85c;
+	    }
+	    to {
+	        background: #ffffff;
+	    }
+	}
+
+	@-webkit-keyframes colorchange_bg_in {
+	    from {
+	        background: #5cb85c;
+	    }
+	    to {
+	        background: #ffffff;
+	    }
+	}
+
+@keyframes colorchange_bg_out {
+    from {
+        background: #e67e22;
+    }
+    to {
+        background: #ffffff;
+        }
+    }
+
+@-webkit-keyframes colorchange_bg_out {
+    from {
+        background: #e67e22;
+    }
+    to {
+        background: #ffffff;
+    }
+}
+
+@keyframes fade_in {
+	    from {
+	        opacity: 0;
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
+
+@-webkit-keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+
+    
